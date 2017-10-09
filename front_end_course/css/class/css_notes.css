@@ -1,0 +1,105 @@
+/* csszengarden.com
+
+selector {
+  property: value;
+  anotherProperty: value;
+}
+*/
+img {
+  border-color: red;
+  border-width: 3px
+}
+h1 {
+  color: purple;
+  /*border-color: purple;
+  border-width: 5px;
+  border-style: dashed;*/
+  border: 5px solid purple;
+}
+li {
+  color: orange;
+}
+h4 {
+  background-color: rgb(255,100,80);
+  color: black;
+}
+body {
+  background-color: gray;
+}
+/* Hexadecimal colors
+0123456789ABCDEF (16 choices)
+#__ __ __
+1st __ = how much red
+2nd __ = how much green
+3rd __ = how much blue
+0 is smallest
+F is largest
+*/
+/*RGBA colors
+Red Green Blue and Alpha
+Alpha = transparency
+RGB range 0-255
+alpha range 0-1
+color: rgba(11, 99, 150, 0.6)
+*/
+
+/* Selectors:
+element: div, paragaph body h1 etc.
+class: set in the html and referenced in css as .
+id: set in the html and referenced in css as #
+*/
+li {
+  border: 2px solid red;
+}
+#rusty {
+  color: orange;
+}
+.header {
+  background-color: green;
+}
+.completed {
+  text-decoration: line-through;
+  color: black;
+}
+
+/*Good Reference:
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+*/
+
+/* Star */
+
+/** .{
+  border: 1px solid lightgrey;
+}*/
+/******************************************/
+/*Decendant Selector*/
+/*li a {
+
+}
+selects everything with anchor tag inside of an li*/
+/*****************************************/
+/*Adjacent Selector */
+/*h4 + ul {
+
+}
+selects all ul that are the same level as h4 */
+/*******************************************/
+/*Attribute Selector*/
+
+/*
+a[href="http://www.google.com"] {
+
+}
+selects every anchor tag with the href = "www.google.com" */
+/*******************************************/
+/*nth of type*/
+/*
+ul:nth-of-type(3){
+
+}
+only the 3rd ul gets this formatting
+
+ul:nth-of-type(even) {
+
+}
+every other ul gets this formatting */
