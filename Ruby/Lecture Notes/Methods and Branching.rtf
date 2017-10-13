@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Light;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red31\green36\blue45;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c16078\c18824\c23137;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Methods and Branching - Text with directions, references and code\
+\pard\pardeftab720\sl580\partightenfactor0
+
+\fs48 \cf2 Section 2, Lecture 24\
+\pard\pardeftab720\sl440\sa400\partightenfactor0
+
+\f1\fs36 \cf2 Structure of an if condition:\cb1 \
+\cb3 if #condition\cb1 \
+\cb3 #execute logic\cb1 \
+\cb3 end\cb1 \
+\cb3 #variant\cb1 \
+\cb3 if #condition\cb1 \
+\cb3 #execute logic\cb1 \
+\cb3 else\cb1 \
+\cb3 #execute different logic\cb1 \
+\cb3 end\cb1 \
+\cb3 #variant\cb1 \
+\cb3 if #condition\cb1 \
+\cb3 #execute logic\cb1 \
+\cb3 elsif #different condition\cb1 \
+\cb3 #execute logic 2\cb1 \
+\cb3 else\cb1 \
+\cb3 #execute logic 3\cb1 \
+\cb3 end\cb1 \
+\cb3 Code worked on:\cb1 \
+\cb3 def multiply(first_number, second_number)\cb1 \
+\cb3 first_number.to_f * second_number.to_f\cb1 \
+\cb3 end\cb1 \
+\cb3 def divide(first_number, second_number)\cb1 \
+\cb3 first_number.to_f / second_number.to_f\cb1 \
+\cb3 end\cb1 \
+\cb3 def subtract(first_number, second_number)\cb1 \
+\cb3 second_number.to_f - first_number.to_f\cb1 \
+\cb3 end\cb1 \
+\cb3 def mod(first_number, second_number)\cb1 \
+\cb3 first_number.to_f % second_number.to_f\cb1 \
+\cb3 end\cb1 \
+\cb3 puts "What do you want to do? 1) multiply 2) divide 3) subtract 4) find remainder"\cb1 \
+\cb3 prompt = gets.chomp\cb1 \
+\cb3 puts "Enter in your first number"\cb1 \
+\cb3 first_number = gets.chomp\cb1 \
+\cb3 puts "Enter in your second number"\cb1 \
+\cb3 second_number = gets.chomp\cb1 \
+\cb3 if prompt == '1'\cb1 \
+\cb3 puts "You have chosen to multiply #\{first_number\} with #\{second_number\}"\cb1 \
+\cb3 result = multiply(first_number, second_number)\cb1 \
+\cb3 elsif prompt == '2'\cb1 \
+\cb3 puts "You have chosen to divide"\cb1 \
+\cb3 result = divide(first_number, second_number)\cb1 \
+\cb3 elsif prompt == '3'\cb1 \
+\cb3 puts "You have chosen to subtract"\cb1 \
+\cb3 result = subtract(first_number, second_number)\cb1 \
+\cb3 elsif prompt == '4'\cb1 \
+\cb3 puts "You have chosen to find the remainder"\cb1 \
+\cb3 result = mod(first_number, second_number)\cb1 \
+\cb3 else\cb1 \
+\cb3 puts "You have made an invalid choice"\cb1 \
+\cb3 end\cb1 \
+\cb3 puts "The result is #\{result\}"\cb1 \
+}

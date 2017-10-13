@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Light;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red31\green36\blue45;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c16078\c18824\c23137;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Solution: Area code dictionary - Text version\
+\pard\pardeftab720\sl580\partightenfactor0
+
+\fs48 \cf2 Section 2, Lecture 34\
+\pard\pardeftab720\sl440\sa400\partightenfactor0
+
+\f1\fs36 \cf2 dial_book = \{\cb1 \
+\cb3 "newyork" => "212",\cb1 \
+\cb3 "newbrunswick" => "732",\cb1 \
+\cb3 "edison" => "908",\cb1 \
+\cb3 "plainsboro" => "609",\cb1 \
+\cb3 "sanfrancisco" => "301"\cb1 \
+\cb3 \}\cb1 \
+\cb3 def get_city_names(somehash)\cb1 \
+\cb3 somehash.each \{ |k, v| puts k \}\cb1 \
+\cb3 end\cb1 \
+\cb3 def get_area_code(somehash, key)\cb1 \
+\cb3 somehash[key]\cb1 \
+\cb3 end\cb1 \
+\cb3 loop do\cb1 \
+\cb3 puts "Do you want to lookup an area code based on a city name?(Y/N)"\cb1 \
+\cb3 answer = gets.chomp\cb1 \
+\cb3 if answer != "Y"\cb1 \
+\cb3 break\cb1 \
+\cb3 end\cb1 \
+\cb3 puts "Which city do you want the area code for?"\cb1 \
+\cb3 get_city_names(dial_book)\cb1 \
+\cb3 puts "Enter your selection"\cb1 \
+\cb3 prompt = gets.chomp\cb1 \
+\cb3 if dial_book.include?(prompt)\cb1 \
+\cb3 puts "The area code for #\{prompt\} is #\{get_area_code(dial_book, prompt)\}"\cb1 \
+\cb3 else\cb1 \
+\cb3 puts "You entered a city name not in the dictionary"\cb1 \
+\cb3 end\cb1 \
+\cb3 end\cb1 \
+}
